@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TELEGRAM-BOTS | techoji</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Dmitry - Telegram-боты">
+    <meta property="og:site_name" content="Dmitry - Telegram-боты">
+    <meta property="og:url" content="https://techoji.neocities.org/">
+    <meta property="og:image" content="../../../img/site_logo2.png">
+    <meta property="og:description" content="">
+    <meta name="description" content="Dmitry - Telegram-боты">
+    <meta name="Author" content="Dmitry">
+    <meta name="Copyright" content="Dmitry">
+    <meta name="keywords" content="techoji, Dmitry">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/site_logo.png" />
+    <link rel="stylesheet" type="text/css" href="../../../style.css">
+    <link rel="stylesheet" type="text/css" href="../../../projects.css">
+    <link rel="stylesheet" type="text/css" href="../../../bots.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="../../../jquery-3.4.1.min.js"></script>
+    <script src="../../../script.js"></script>
+</head>
+
+<body id="botsPage">
+    <header>
+        <div class="headerNav">
+            <div class="navForMobile">
+                <span class="material-icons menuNavBtn">
+                    menu
+                </span>
+                <div class="navigationBlock">
+                    <div class="mobileNavigation">
+                        <a class="link withoutIcon" href="../../index.html">HOME</a>
+                        >
+                        <a class="link withoutIcon" href="../index.html">PROJECTS</a>
+                        >
+                        <h4>TELEGRAM-BOTS</h4>
+                    </div>
+                    <div class="mobileTabs">
+                        <ul>
+                            <li>
+                                <div class="nestedList">
+                                    LANGUAGE
+                                </div>
+                                <ul>
+                                    <li class="active"><a href="../../../en/projects/bots/index.html">English</a></li>
+                                    <li><a href="../../../ru/projects/bots/index.html">Русский</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="link" href="../../index.html">
+                                    ABOUT ME
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link" href="../../resume/index.html">
+                                    RESUME
+                                </a>
+                            </li>
+                            <li class="active">
+                                <div class="nestedList">
+                                    PROJECTS
+                                </div>
+                                <ul>
+                                    <li><a href="../music/index.html">Audioprojects</a></li>
+                                    <li><a href="../videos/index.html">Videoprojects</a></li>
+                                    <li><a href="../sites/index.html">Sites</a></li>
+                                    <li class="active"><a href="../bots/index.html">Telegram-bots</a></li>
+                                    <li><a href="../programs/index.html">Programs</a></li>
+                                    <li><a href="../games/index.html">Games</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="navForPC">
+                <div class="nav-links">
+                    <a class="link withoutIcon" href="../../index.html">HOME</a>
+                    >
+                    <a class="link withoutIcon" href="../index.html">PROJECTS</a>
+                    >
+                </div>
+                <h4>TELEGRAM-BOTS</h4>
+                <div></div>
+            </div>
+        </div>
+        <a href="../../index.html">
+            <img id="logoImg" src="../../../img/logo.gif" alt="">
+            <p id="logoText"><b>_techoji as object</b></p>
+        </a>
+        <div class="headerTabs">
+            <ul class="tabs tabsheader">
+                <li class="under">
+                    <div class="flex">
+                    </div>
+                    <ul class="undertabs">
+                        <li class="active"><a href="../../../en/projects/bots/index.html">English</a></li>
+                        <li><a href="../../../ru/projects/bots/index.html">Русский</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="link withoutIcon" href="../../index.html">
+                    </a>
+                </li>
+                <li>
+                    <a class="link withoutIcon" href="../../resume/index.html">
+                    </a>
+                </li>
+                <li class="under active">
+                    <a href="../../projects/index.html">
+                        <div class="flex">
+                        </div>
+                        <ul class="undertabs">
+                            <li><a href="../music/index.html">Audioprojects</a></li>
+                            <li><a href="../videos/index.html">Videoprojects</a></li>
+                            <li><a href="../sites/index.html">Sites</a></li>
+                            <li class="active"><a href="../bots/index.html">Telegram-bots</a></li>
+                            <li><a href="../programs/index.html">Programs</a></li>
+                            <li><a href="../games/index.html">Games</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <!-- <li><a href="">CONTACT</a></li> -->
+            </ul>
+        </div>
+    </header>
+    <main id="top">
+        <div class="btnUp" id="btnUp">
+            <a href="#top" style="color:black">
+                <i class="material-icons">
+                    expand_less
+                </i>
+            </a>
+        </div>
+        <div class="navigation">
+            <div class="status-container">
+                <a href="../../index.html">
+                    <h1>_techoji</h1>
+                </a>
+                <h1>.</h1>
+                <a href="../index.html" class="csharp-method">
+                    <h1>
+                        GetProjectsByType
+                        <span class="csharp-default">(</span>
+                    </h1>
+                </a>
+                <a href="../index.html" class="csharp-enum">
+                    <h1>
+                        <span class="csharp-enum">ProjectType</span>
+                    </h1>
+                </a>
+                <h1>.</h1>
+                <a href="">
+                    <h1>
+                        <span class="csharp-default">Bots</span>
+                    </h1>
+                </a>
+                <h1>)</h1>
+                <span class="csharp-comment">// Bots which maded on WinForms using C# language</span>
+            </div>
+            <div class="tabs-container">
+                <ul class="tabs">
+                    <li class="under">
+                        <div class="flex">
+                            LANGUAGE
+                        </div>
+                        <ul class="undertabs">
+                            <li class="active"><a href="../../../en/projects/bots/index.html">English</a></li>
+                            <li><a href="../../../ru/projects/bots/index.html">Русский</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="link withoutIcon" href="../../index.html">
+                            ABOUT ME
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link withoutIcon" href="../../resume/index.html">
+                            RESUME
+                        </a>
+                    </li>
+                    <li class="under active">
+                        <a href="../../projects/index.html">
+                            <div class="flex">
+                                PROJECTS
+                            </div>
+                            <ul class="undertabs">
+                                <li><a href="../music/index.html">Audioprojects</a></li>
+                                <li><a href="../videos/index.html">Videoprojects</a></li>
+                                <li><a href="../sites/index.html">Sites</a></li>
+                                <li class="active"><a href="../bots/index.html">Telegram-bots</a></li>
+                                <li><a href="../programs/index.html">Programs</a></li>
+                                <li><a href="../games/index.html">Games</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <!-- <li><a href="">CONTACT</a></li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="information">
+            <div class="info-nav">
+                <div class="nav-links left">
+                    <a class="link withoutIcon" href="../../index.html">HOME</a>
+                    >
+                    <a class="link withoutIcon" href="../index.html">PROJECTS</a>
+                    >
+                </div>
+                <h1>TELEGRAM-BOTS</h1>
+                <div></div>
+            </div>
+            <div class="projects-container">
+                <a href="#MusicBot">
+                    <figure class="musicBot">
+                        <img src="../../../img/bots/musicBot.png" alt="">
+                        <figcaption>Music Bot</figcaption>
+                        <p>The bot signs tracks for the channel @ug_rap</p>
+                    </figure>
+                </a>
+                <a href="#EncoderBot">
+                    <figure class="encoderBot">
+                        <img src="../../../img/bots/encoderBot.jpg" alt="">
+                        <figcaption>Encoder Bot</figcaption>
+                        <p>Bot encrypts and decrypts text</p>
+                    </figure>
+                </a>
+                <a href="#KhNUREBot">
+                    <figure class="KhNUREBot">
+                        <img src="../../../img/bots/KhNUREBot.png" alt="">
+                        <figcaption>KhNURE Bot</figcaption>
+                        <p>Completed tasks for subjects</p>
+                    </figure>
+                </a>
+            </div>
+        </div>
+        <div class="detal-information">
+            <article id="MusicBot">
+                <a href="https://t.me/muzlibot">
+                    <img class="projects-logo" src="../../../img/bots/musicBot.png" alt="Music Bot" title="Music Bot">
+                </a>
+                <div class="projects-content">
+                    <div class="projects-name">
+                        <h1>Music Bot</h1>
+                        <p>@muzlibot</p>
+                    </div>
+                    <div class="content-block">
+                        <a data-fancybox="MusicBotGallery" data-caption="Music Bot - Demonstration of functionality" href="../../../img/bots/musicBot.gif">
+                            <img class="projects-screen" src="../../../img/bots/musicBot.gif" alt="">
+                        </a>
+                        <p class="title">Demonstration of functionality</p>
+                    </div>
+                    <h4>The bot signs tracks for the channel @ug_rap</h4>
+                    <div class="projects-description">
+                        <p class="text-block project-info">The bot allows you to sign and put a cover for tracks.</p>
+                        <dl class="text-block enum settings"> <strong>List of commands</strong>
+                            <dt>/start</dt>
+                            <dd>Launch the bot</dd>
+                            <dt>/of</dt>
+                            <dd>Changing the clip type (<span class="sapid">official</span> / <span class="sapid">general</span>)</dd>
+                            <dt>/sp</dt>
+                            <dd>Send a message for review (after <span class="sapid">/sp</span> your message)</dd>
+                            <dt>/cancel</dt>
+                            <dd>Cancel actions</dd>
+                        </dl>
+                        <p class="text-block info"><strong>Send</strong>/<strong>forward</strong> track to sign it</p>
+                        <dl class="text-block enum functional"> <strong>Bonus</strong>
+                            <dt>/say</dt>
+                            <dd><span class="sapid">[number]</span> - Get a voice message with a number</dd>
+                        </dl>
+                        <a href="https://t.me/muzlibot" class="btn" title="">Open</a>
+                    </div>
+                </div>
+            </article>
+            <article id="EncoderBot">
+                <a href="#EncoderBot">
+                    <img class="projects-logo" src="../../../img/bots/encoderBot.jpg" alt="Encoder Bot" title="Encoder Bot">
+                </a>
+                <div class="projects-content">
+                    <div class="projects-name">
+                        <h1>Encoder Bot</h1>
+                        <p>@CoderTextBot</p>
+                    </div>
+                    <div class="content-block">
+                        <a data-fancybox="EncoderBotGallery" data-caption="Encoder Bot - Demonstration of functionality" href="../../../img/bots/encoderBot.gif">
+                            <img class="projects-screen" src="../../../img/bots/encoderBot.gif" alt="">
+                        </a>
+                        <p class="title">Demonstration of functionality</p>
+                    </div>
+                    <h4>The bot encrypts and decrypts the text, and then issues a unique key 🔑</h4>
+                    <div class="projects-description">
+                        <p class="text-block project-info">After sending any message, the bot will send you an encrypted message and a unique key that can be used to decrypt this message</p>
+                        <dl class="text-block enum settings"> <strong>List of commands</strong>
+                            <dt>/start</dt>
+                            <dd>Launching the bot</dd>
+                            <dt>/settings</dt>
+                            <dd>Bot settings</dd>
+                            <dt>/cancel</dt>
+                            <dd>Canceling actions</dd>
+                        </dl>
+                        <dl class="text-block enum modes"> <strong>Modes</strong>
+                            <dt>Caesar's Cipher</dt>
+                            <dd>This mode allows you to encrypt text by replacing a character that is located at a certain constant number of positions to the left or right of it in the alphabet</dd>
+                            <dt>The Vigener Cipher</dt>
+                            <dd>This mode allows you to encrypt text using a keyword that you can create yourself, or generate automatically</dd>
+                        </dl>
+                        <a href="https://t.me/CoderTextBot" class="btn" title="">Open</a>
+                    </div>
+                </div>
+            </article>
+            <article id="KhNUREBot">
+                <a href="https://t.me/pripadoc_bot">
+                    <img class="projects-logo" src="../../../img/bots/KhNUREBot.png" alt="KhNURE Bot" title="KhNURE Bot">
+                </a>
+                <div class="projects-content">
+                    <div class="projects-name">
+                        <h1>KhNURE Bot</h1>
+                        <p>@pripadoc_bot</p>
+                    </div>
+                    <div class="content-block">
+                        <a data-fancybox="KhNUREBotGallery" data-caption="KhNURE Bot - Demonstration of functionality" href="../../../img/bots/KhNUREBot.gif">
+                            <img class="projects-screen" src="../../../img/bots/KhNUREBot.gif" alt="">
+                        </a>
+                        <p class="title">Demonstration of functionality</p>
+                    </div>
+                    <h4>Completed tasks for subjects</h4>
+                    <div class="projects-description">
+                        <p class="text-block project-info">The bot sends completed tasks by subject</p>
+                        <p class="text-block info">
+                            To find the desired task for the subject, just write <strong>/start</strong>, then select <i>Course</i> > <i>Subject</i> > <i>Task</i>
+                        </p>
+                        <dl class="text-block enum settings"> <strong>List of commands</strong>
+                            <dt>/start</dt>
+                            <dd>Launch the bot</dd>
+                            <dt>/info</dt>
+                            <dd>Information</dd>
+                            <dt>/donate</dt>
+                            <dd>Support the developer</dd>
+                        </dl>
+                        <p class="text-block info">
+                            Some tasks are paid, the price is written in brackets
+                            <br><br>
+                            <strong>Example:</strong> 2 курс\ОТПВ\ПЗ 3 отчет <span class="sapid">(30грн)</span>
+                        </p>
+                        <a href="https://t.me/pripadoc_bot" class="btn" title="">Open</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2021 techoji. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

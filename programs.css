@@ -1,0 +1,36 @@
+.responder {
+    top: 0;
+    left: 30%;
+    transform: rotateZ(-6deg);
+}
+
+figure img {
+    border: none;
+}
+
+.responder:before {
+    top: -8px;
+    left: 200px;
+}
+
+.sender {
+    top: 0;
+    left: 30%;
+    transform: rotateZ(12deg);
+}
+
+.sender:before {
+    top: -8px;
+    left: 100px;
+}
+
+.talker {
+    top: 0;
+    left: 30%;
+    transform: rotateZ(-4deg);
+}
+
+.talker:before {
+    top: 100px;
+    left: -30px;
+}

@@ -1,0 +1,43 @@
+figure img {
+    border: none;
+    border-radius: 50%;
+}
+
+.musicBot {
+    top: 0;
+    left: 30%;
+    transform: rotateZ(6deg);
+}
+
+.musicBot:before {
+    top: -8px;
+    left: 12px;
+}
+
+.encoderBot {
+    top: 0;
+    left: 30%;
+    transform: rotateZ(-6deg);
+}
+
+.encoderBot:before {
+    top: -8px;
+    left: 200px;
+}
+
+.KhNUREBot {
+    top: 0;
+    left: 30%;
+    transform: rotateZ(9deg);
+}
+
+.KhNUREBot:before {
+    top: 40px;
+    left: 100px;
+}
+
+@media (max-width: 970px) {
+    .detal-information article {
+        margin-top: 180px;
+    }
+}

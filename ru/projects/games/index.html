@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>ИГРЫ | techoji</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Игры">
+    <meta property="og:site_name" content="Игры">
+    <meta property="og:url" content="https://techoji.neocities.org/">
+    <meta property="og:image" content="../../../img/site_logo2.png">
+    <meta property="og:description" content="">
+    <meta name="description" content="Игры">
+    <meta name="keywords" content="techoji">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/site_logo.png" />
+    <link rel="stylesheet" type="text/css" href="../../../style.css">
+    <link rel="stylesheet" type="text/css" href="../../../projects.css">
+    <link rel="stylesheet" type="text/css" href="../../../games.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="../../../script.js"></script>
+</head>
+
+<body id="gamesPage">
+    <header>
+        <div class="headerNav">
+            <div class="navForMobile">
+                <span class="material-icons menuNavBtn">
+                    menu
+                </span>
+                <div class="navigationBlock">
+                    <div class="mobileNavigation">
+                        <a class="link withoutIcon" href="../../index.html">ГЛАВНАЯ</a>
+                        >
+                        <a class="link withoutIcon" href="../index.html">ПРОЕКТЫ</a>
+                        >
+                        <h4>ИГРЫ</h4>
+                    </div>
+                    <div class="mobileTabs">
+                        <ul>
+                            <li>
+                                <div class="nestedList">
+                                    ЯЗЫК
+                                </div>
+                                <ul>
+                                    <li><a href="../../../en/projects/games/index.html">English</a></li>
+                                    <li class="active"><a href="../../../ru/projects/games/index.html">Русский</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="link" href="../../index.html">
+                                    ОБО МНЕ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link" href="../../resume/index.html">
+                                    РЕЗЮМЕ
+                                </a>
+                            </li>
+                            <li class="active">
+                                <div class="nestedList">
+                                    ПРОЕКТЫ
+                                </div>
+                                <ul>
+                                    <li><a href="../../projects/music/index.html">Аудиопроекты</a></li>
+                                    <li><a href="../../projects/videos/index.html">Видеопроекты</a></li>
+                                    <li><a href="../../projects/sites/index.html">Сайты</a></li>
+                                    <li><a href="../../projects/bots/index.html">Telegram-боты</a></li>
+                                    <li><a href="../../projects/programs/index.html">Программы</a></li>
+                                    <li class="active"><a href="../../projects/games/index.html">Игры</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="navForPC">
+                <div class="nav-links">
+                    <a class="link withoutIcon" href="../../index.html">ГЛАВНАЯ</a>
+                    >
+                    <a class="link withoutIcon" href="../index.html">ПРОЕКТЫ</a>
+                    >
+                </div>
+                <h4>ИГРЫ</h4>
+                <div></div>
+            </div>
+        </div>
+        <a href="../../index.html">
+            <img id="logoImg" src="../../../img/logo.gif" alt="">
+            <p id="logoText"><b>_techoji as object</b></p>
+        </a>
+        <div class="headerTabs">
+            <ul class="tabs tabsheader">
+                <li class="under">
+                    <div class="flex">
+                    </div>
+                    <ul class="undertabs">
+                        <li><a href="../../../en/projects/games/index.html">English</a></li>
+                        <li class="active"><a href="../../../ru/projects/games/index.html">Русский</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="link withoutIcon" href="../../index.html">
+                    </a>
+                </li>
+                <li>
+                    <a class="link withoutIcon" href="../../resume/index.html">
+                    </a>
+                </li>
+                <li class="under active">
+                    <a href="../../projects/index.html">
+                        <div class="flex">
+                        </div>
+                        <ul class="undertabs">
+                            <li><a href="../../projects/music/index.html">Аудиопроекты</a></li>
+                            <li><a href="../../projects/videos/index.html">Видеопроекты</a></li>
+                            <li><a href="../../projects/sites/index.html">Сайты</a></li>
+                            <li><a href="../../projects/bots/index.html">Telegram-боты</a></li>
+                            <li><a href="../../projects/programs/index.html">Программы</a></li>
+                            <li class="active"><a href="../../projects/games/index.html">Игры</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <!-- <li><a href="">CONTACT</a></li> -->
+            </ul>
+        </div>
+    </header>
+    <main id="top">
+        <div class="btnUp" id="btnUp">
+            <a href="#top" style="color:black">
+                <i class="material-icons">
+                    expand_less
+                </i>
+            </a>
+        </div>
+        <div class="navigation">
+            <div class="status-container">
+                <a href="../../index.html">
+                    <h1>_techoji</h1>
+                </a>
+                <h1>.</h1>
+                <a href="../index.html" class="csharp-method">
+                    <h1>
+                        GetProjectsByType
+                        <span class="csharp-default">(</span>
+                    </h1>
+                </a>
+                <a href="../index.html" class="csharp-enum">
+                    <h1>
+                        <span class="csharp-enum">ProjectType</span>
+                    </h1>
+                </a>
+                <h1>.</h1>
+                <a href="">
+                    <h1>
+                        <span class="csharp-default">Games</span>
+                    </h1>
+                </a>
+                <h1>)</h1>
+                <span class="csharp-comment">// Игры написанные на языке C# в WinForms</span>
+            </div>
+            <div class="tabs-container">
+                <ul class="tabs">
+                    <li class="under">
+                        <div class="flex">
+                            ЯЗЫК
+                        </div>
+                        <ul class="undertabs">
+                            <li><a href="../../../en/projects/games/index.html">English</a></li>
+                            <li class="active"><a href="../../../ru/projects/games/index.html">Русский</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="link withoutIcon" href="../../index.html">
+                            ОБО МНЕ
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link withoutIcon" href="../../resume/index.html">
+                            РЕЗЮМЕ
+                        </a>
+                    </li>
+                    <li class="under active">
+                        <a href="../../projects/index.html">
+                            <div class="flex">
+                                ПРОЕКТЫ
+                            </div>
+                            <ul class="undertabs">
+                                <li><a href="../../projects/music/index.html">Аудиопроекты</a></li>
+                                <li><a href="../../projects/videos/index.html">Видеопроекты</a></li>
+                                <li><a href="../../projects/sites/index.html">Сайты</a></li>
+                                <li><a href="../../projects/bots/index.html">Telegram-боты</a></li>
+                                <li><a href="../../projects/programs/index.html">Программы</a></li>
+                                <li class="active"><a href="../../projects/games/index.html">Игры</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <!-- <li><a href="">CONTACT</a></li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="information">
+            <div class="info-nav">
+                <div class="nav-links left">
+                    <a class="link withoutIcon" href="../../index.html">ГЛАВНАЯ</a>
+                    >
+                    <a class="link withoutIcon" href="../index.html">ПРОЕКТЫ</a>
+                    >
+                </div>
+                <h1>ИГРЫ</h1>
+                <div></div>
+            </div>
+            <div class="projects-container">
+                <a href="#TheCops">
+                    <figure class="cops">
+                        <img src="../../../img/games/The Cops.jpg" alt="">
+                        <figcaption>The Cops</figcaption>
+                        <p>Стратегическая игра, где главный герой - начальник полиции Харькова</p>
+                    </figure>
+                </a>
+                <a href="#SeaBattleProPlus">
+                    <figure class="seabattle">
+                        <img src="../../../img/games/SeaBattle.png" alt="">
+                        <figcaption>Sea Battle Pro+</figcaption>
+                        <p>Стратегическая игра</p>
+                    </figure>
+                </a>
+                <a href="#SudokuExtreme">
+                    <figure class="sudoku">
+                        <img src="../../../img/games/sudoku.png" alt="">
+                        <figcaption>Sudoku Extreme</figcaption>
+                        <p>Расслабляющая игра с числами</p>
+                    </figure>
+                </a>
+                <a href="#_2048Extended">
+                    <figure class="_2048game">
+                        <img src="../../../img/games/_2048.png" alt="">
+                        <figcaption>2048 Extended</figcaption>
+                        <p>Игра-головоломка</p>
+                    </figure>
+                </a>
+                <a href="#SaperLite">
+                    <figure class="saper">
+                        <img src="../../../img/games/saper.png" alt="">
+                        <figcaption>Saper Lite</figcaption>
+                        <p>Игра-головоломка</p>
+                    </figure>
+                </a>
+                <a href="#ChessNeon">
+                    <figure class="chess">
+                        <img src="../../../img/games/chess.png" alt="">
+                        <figcaption>Chess neon</figcaption>
+                        <p>Шахматы в неоновом стиле</p>
+                    </figure>
+                </a>
+                <a href="#Puzzle15">
+                    <figure class="puzzle">
+                        <img src="../../../img/games/puzzle.png" alt="">
+                        <figcaption>Пятнашки</figcaption>
+                        <p>Игра-головоломка</p>
+                    </figure>
+                </a>
+                <a href="#Snake">
+                    <figure class="snake">
+                        <img src="../../../img/games/snake.png" alt="">
+                        <figcaption>Змейка</figcaption>
+                        <p>Компьютерная игра</p>
+                    </figure>
+                </a>
+                <a href="#FindAWay">
+                    <figure class="findAWay">
+                        <img src="../../../img/games/FindAWay.png" alt="">
+                        <figcaption>Find A Way</figcaption>
+                        <p>Сможете ли Вы повторить последовательность нажимания кнопок?</p>
+                    </figure>
+                </a>
+                <a href="#Tic-tac-toe">
+                    <figure class="tic-tac-toe">
+                        <img src="../../../img/games/Tic-tac-toe.png" alt="">
+                        <figcaption>Tic-tac-toe</figcaption>
+                        <p>Логическая игра между двумя противниками</p>
+                    </figure>
+                </a>
+            </div>
+        </div>
+        <div class="detal-information">
+            <article id="TheCops">
+                <a href="#TheCops">
+                    <img class="projects-logo" src="../../../img/games/The Cops.jpg" alt="The Cops" title="The Cops">
+                </a>
+                <div class="projects-content">
+                    <h1>The Cops</h1>
+                    <div class="content-block">
+                        <a data-fancybox="TheCopsGallery" data-caption="The Cops - Игровая карта"
+                            href="../../../img/games/The Cops_screen.png">
+                            <img class="projects-screen" src="../../../img/games/The Cops_screen.png" alt="">
+                        </a>
+                        <p class="title">Игровая карта</p>
+                    </div>
+                    <h4>
+                        Стратегическая игра, где главный герой - начальник полиции Харькова
+                    </h4>
+                    <div class="projects-description">
+                        <p class="text-block project-info"><strong>Главный герой</strong> — начальник полиции города
+                            Харьков, под контролем которого находятся полицейские, которых он посылает на вызовы и
+                            расследование преступлений на карте города. Сотрудники имеют ряд качеств, таких как их опыт,
+                            звание, уровень усталости, а также некоторые работники могут иметь личные качества вроде
+                            лени и склонности к алкоголю.</p>
+                        <div class="content-block">
+                            <iframe class="promovideo"
+                                src="https://drive.google.com/file/d/1JaD2XqqcmoufPxtV7MoBcxj1h_bBFXVO/preview"
+                                width="640" height="480"></iframe>
+                            <p class="title">Отрывок игры «<strong>The Cops</strong>»</p>
+                        </div>
+                        <p class="text-block info">На миссию требуется определенное <strong>количество опыта</strong>,
+                            если при выборе одного или нескольких копов в сумме выходит столько же опыта или больше, то
+                            загорается кнопка <strong>Приступить</strong>.</p>
+                        <div class="content-block">
+                            <p class="caption">Миссия «<strong>Кулиничи</strong>»:</p>
+                            <a data-fancybox="TheCopsGallery"
+                                data-caption="Миссия «Кулиничи» - Для выполнения миссии требуется 1150 очков опыта команды."
+                                href="../../../img/games/The Cops_screen2.png">
+                                <img src="../../../img/games/The Cops_screen2.png">
+                            </a>
+                            <p class="title">Для выполнения миссии требуется <strong>1150 очков</strong> опыта команды.
+                            </p>
+                        </div>
+                        <p class="text-block info">На <strong>специфических миссиях</strong>, для удачного прохождения,
+                            требуется выполнить <strong>мини-квест</strong>, выбрав правильный ответ среди предложенных.
+                        </p>
+                        <div class="content-block">
+                            <p class="caption">Мини-квест миссии «<strong>Кулиничи</strong>»:</p>
+                            <a data-fancybox="TheCopsGallery" data-caption="Мини-квест миссии «Кулиничи»"
+                                href="../../../img/games/The Cops_screen5.png">
+                                <img src="../../../img/games/The Cops_screen5.png" alt="">
+                            </a>
+                        </div>
+                        <p class="text-block info">
+                            Иногда, у Вас на карте будут появляться персональные миссии с <strong>уникальными
+                                предложениями</strong>, за них зачастую можно получить дополнилельные деньги. Например,
+                            обычное наличие одного-двух копов без потребности суммарного опыта или необходимостью
+                            запастись некоторыми вещами, какими именно - следует внимательно вчитываться в описание
+                            миссии.</p>
+                        <div class="content-block">
+                            <p class="caption">Миссия «<strong>Подъезд</strong>»:</p>
+                            <a data-fancybox="TheCopsGallery" data-caption="Миссия «Подъезд»"
+                                href="../../../img/games/The Cops_screen7.png">
+                                <img src="../../../img/games/The Cops_screen7.png" alt="">
+                            </a>
+                            <p class="title">Для выполнения миссии требуется привезти незнакомцам <strong>2 розовых
+                                    спиннера</strong> и <strong>смазку</strong></p>
+                        </div>
+                        <div class="content-block">
+                            <p class="caption">Склад и продавцы:</p>
+                            <a data-fancybox="TheCopsGallery" data-caption="Склад и продавцы"
+                                href="../../../img/games/The Cops_screen3.png">
+                                <img src="../../../img/games/The Cops_screen3.png" alt="">
+                            </a>
+                        </div>
+                        <p class="text-block info"><strong>Вещи</strong> можно приобрести, если у Вас имеется
+                            достаточное количество денег, которые можно заработать выполняя различные миссии.</p>
+                        <div class="content-block">
+                            <p class="caption">Товары которые можно приобрести у одного из продавцов:</p>
+                            <a data-fancybox="TheCopsGallery"
+                                data-caption="Товары которые можно приобрести у одного из продавцов"
+                                href="../../../img/games/The Cops_screen4.png">
+                                <img src="../../../img/games/The Cops_screen4.png" alt="">
+                            </a>
+                        </div>
+                        <p class="text-block info"><strong>Данные</strong> для игры берутся из
+                            <strong>Excel-таблицы</strong>, где легко можно <strong>заменить</strong>, или
+                            <strong>добавить</strong> любого копа, миссию или предметы для продавцов
+                        </p>
+                        <div class="content-block">
+                            <p class="caption">Таблица «<strong>Cops</strong>»:</p>
+                            <a data-fancybox="TheCopsGallery" data-caption="Таблица «Cops»"
+                                href="../../../img/games/The Cops_screen6.png">
+                                <img src="../../../img/games/The Cops_screen6.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <a class="repo-link" href="https://github.com/techoji/The-Cops"></a>
+                </div>
+            </article>
+            <article id="SeaBattleProPlus">
+                <a href="#SeaBattleProPlus">
+                    <img class="projects-logo" src="../../../img/games/SeaBattle.png" alt="Sea Battle Pro+"
+                        title="Sea Battle Pro+">
+                </a>
+                <div class="projects-content">
+                    <h1>Sea Battle Pro+</h1>
+                    <div class="content-block">
+                        <a data-fancybox="SeaBattleProPlusGallery"
+                            data-caption="Sea Battle Pro+ - Скриншот игрового процесса"
+                            href="../../../img/games/SeaBattle_screen.png">
+                            <img class="projects-screen" src="../../../img/games/SeaBattle_screen.png" alt="">
+                        </a>
+                        <p class="title">Скриншот игрового процесса</p>
+                    </div>
+                    <h4>Стратегическая игра</h4>
+                    <div class="projects-description">
+                        <p class="text-block project-info">
+                            <strong>Sea Battle Pro+</strong> игра для двух участников, в которой игроки по очереди
+                            струляют по неизвестной им карте соперника. Если у соперника по этим координатам имеется
+                            корабль, то корабль или его часть «топится», а попавший получает право сделать ещё один ход.
+                            Цель игрока — первым потопить все корабли противника.
+                            <br><br>
+                            Правила игры в морской бой, можно прочитать <a class="link-open"
+                                href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%B1%D0%BE%D0%B9_(%D0%B8%D0%B3%D1%80%D0%B0)#%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0_%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BA%D0%BE%D1%80%D0%B0%D0%B1%D0%BB%D0%B5%D0%B9_(%D1%84%D0%BB%D0%BE%D1%82%D0%B0)">тут</a>.
+                        </p>
+                        <div class="content-block">
+                            <p class="caption">Демонстрация процесса игры:</p>
+                            <a data-fancybox="SeaBattleProPlusGallery"
+                                data-caption="Sea Battle Pro+ - Демонстрация процесса игры"
+                                href="../../../img/games/SeaBattle_pre.gif">
+                                <img src="../../../img/games/SeaBattle_pre.gif" alt="">
+                            </a>
+                        </div>
+                        <dl class="text-block enum settings"> <strong>Настройки</strong>
+                            <dt>Подсказки</dt>
+                            <dd>Включить/выключить подсказки</dd>
+                        </dl>
+                        <dl class="text-block enum functional"> <strong>Функционал</strong>
+                            <dt>Искусственный интеллект противника</dt>
+                            <dd>Включить/выключить искусственный интеллект противника (перед выстрелом противник думает,
+                                может ли находиться корабль там, где ожидается выстрел)</dd>
+                            <dt>Умное добивание</dt>
+                            <dd>Включить/выключить умное добивание корабля (как только противник попадает в корабль, а
+                                после промахивается, он станет стрелять вокруг корабля до тех пор, пока не прикончит
+                                его).</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <a class="repo-link" href="https://github.com/techoji/SeaBattlePro"></a>
+                </div>
+            </article>
+            <article id="SudokuExtreme">
+                <a href="#SudokuExtreme">
+                    <img class="projects-logo" src="../../../img/games/sudoku.png" alt="Sudoku Extreme"
+                        title="Sudoku Extreme">
+                </a>
+                <div class="projects-content">
+                    <h1>Sudoku Extreme</h1>
+                    <div class="content-block">
+                        <a data-fancybox="SudokuExtremeGallery"
+                            data-caption="Sudoku Extreme - Скриншот игрового процесса"
+                            href="../../../img/games/sudoku_screen.png">
+                            <img class="projects-screen" src="../../../img/games/sudoku_screen.png" alt="">
+                        </a>
+                        <p class="title">Скриншот игрового процесса</p>
+                    </div>
+                    <h4>Расслабляющая игра с числами</h4>
+                    <div class="projects-description">
+                        <p class="text-block project-info">
+                            <strong>Sudoku Extreme</strong> представляет собой задачу со сложными скрытыми слоями. Ее
+                            основу составляет сетка с клетками 9x9, разделенная на подсетки с ячейками 3x3. Нужно
+                            заполнить цифрами весь квадрат таким образом, чтобы и ряд и колонка содержали все цифры от 1
+                            до 9 без повторов. Отдельные числа фигурируют в ячейках как ключи-подсказки, игрок должен
+                            вписать остальные.
+                            <br><br>
+                            Правила игры судоку, можно прочитать <a class="link-open"
+                                href="https://en.wikipedia.org/wiki/Sudoku">тут</a>.
+                        </p>
+                        <div class="content-block">
+                            <p class="caption">Демонстрация процесса игры:</p>
+                            <a data-fancybox="SudokuExtremeGallery"
+                                data-caption="Sudoku Extreme - Демонстрация процесса игры"
+                                href="../../../img/games/sudoku_screen2.gif">
+                                <img src="../../../img/games/sudoku_screen2.gif" alt="">
+                            </a>
+                        </div>
+                        <dl class="text-block enum settings"> <strong>Настройки</strong>
+                            <dt>Ошибки</dt>
+                            <dd>Включает/выключает показ ошибок в поле 3х3, по горизонтали и по вертикали</dd>
+                            <dt>Сетка</dt>
+                            <dd>Включить/выключить подсведку сетки активного поля</dd>
+                            <dt>Похожие числа</dt>
+                            <dd>Включить/выключить подсведку похожих чисел активного поля</dd>
+                            <dt>Звук</dt>
+                            <dd>Включить/выключить звук игры</dd>
+                        </dl>
+                        <dl class="text-block enum functional"> <strong>Функционал</strong>
+                            <dt>Сохранить прогресс</dt>
+                            <dd>Сохраняет ваш прогресс в файл</dd>
+                            <dt>Загрузить прогресс</dt>
+                            <dd>Загружает прогресс игры</dd>
+                            <dt>Отмена действия</dt>
+                            <dd>Отменяет ход</dd>
+                            <dt>Шаги</dt>
+                            <dd>Количество шагов</dd>
+                            <dt>Клавиша e</dt>
+                            <dd>Очищает клетку от всех ошибочных номеров</dd>
+                            <dt>Клавиша t</dt>
+                            <dd>Переключает на карандаш (временные числа)</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <a class="repo-link" href="https://github.com/techoji/SudokuExtreme"></a>
+                </div>
+            </article>
+            <article id="_2048Extended">
+                <a href="#_2048Extended">
+                    <img class="projects-logo" src="../../../img/games/_2048.png" alt="2048 Extended"
+                        title="2048 Extended">
+                </a>
+                <div class="projects-content">
+                    <h1>2048 Extended</h1>
+                    <div class="content-block">
+                        <a data-fancybox="_2048ExtendedGallery"
+                            data-caption="2048 Extended - Скриншот игрового процесса"
+                            href="../../../img/games/_2048_screen.png">
+                            <img class="projects-screen" src="../../../img/games/_2048_screen.png" alt="">
+                        </a>
+                        <p class="title">Скриншот игрового процесса</p>
+                    </div>
+                    <h4>Игра-головоломка</h4>
+                    <div class="projects-description">
+                        <p class="text-block project-info">
+                            В <strong>2048 Extended</strong> вам необходимо скинуть все плитки игрового поля в одну из 4
+                            сторон. Если при сбрасывании две плитки одного номинала «налетают» одна на другую, то они
+                            превращаются в одну, номинал которой равен сумме соединившихся плиток.
+                            <br><br>
+                            Правила игры 2048, можно прочитать <a class="link-open"
+                                href="https://en.wikipedia.org/wiki/2048_(video_game)">тут</a>.
+                        </p>
+                        <div class="content-block">
+                            <p class="caption">Демонстрация режима игры «<strong>До числа</strong>»:</p>
+                            <a data-fancybox="_2048ExtendedGallery"
+                                data-caption="2048 Extended - Демонстрация режима игры «До числа»"
+                                href="../../../img/games/_2048_screen2.gif">
+                                <img src="../../../img/games/_2048_screen2.gif" alt="">
+                            </a>
+                        </div>
+                        <dl class="text-block enum settings"> <strong>Настройки</strong>
+                            <dt>Сетка</dt>
+                            <dd>Включить/выключить заднюю сетку</dd>
+                            <dt>Начальное число</dt>
+                            <dd>Выбор числа, которое будет появляться с каждым ходом</dd>
+                        </dl>
+                        <dl class="text-block enum functional"> <strong>Функционал</strong>
+                            <dt>Сохранить прогресс</dt>
+                            <dd>Сохраняет ваш прогресс в файл</dd>
+                            <dt>Загрузить прогресс</dt>
+                            <dd>Загружает прогресс игры</dd>
+                            <dt>Повтор</dt>
+                            <dd>По завершению игры, можно посмотреть повтор игры</dd>
+                        </dl>
+                        <dl class="text-block enum modes"> <strong>Режимы</strong>
+                            <dt>Бесконечный</dt>
+                            <dd>Игра не остановится, когда будет достигнуто число 2048</dd>
+                            <dt>Автоматический</dt>
+                            <dd>Пронаблюдайте, как игра пройдёт сама себя</dd>
+                            <dt>До числа</dt>
+                            <dd>Игра закончится по достижению выбранного числа. По умолчанию - 2048</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <a class="repo-link" href="https://github.com/techoji/2048-Extended"></a>
+                </div>
+            </article>
+            <article id="SaperLite">
+                <a href="#SaperLite">
+                    <img class="projects-logo" src="../../../img/games/saper.png" alt="Saper Lite" title="Saper Lite">
+                </a>
+                <div class="projects-content">
+                    <h1>Saper Lite</h1>
+                    <div class="content-block">
+                        <a data-fancybox="SaperLiteGallery" data-caption="Saper Lite - Скриншот игрового процесса"
+                            href="../../../img/games/saper_screen.png">
+                            <img class="projects-screen" src="../../../img/games/saper_screen.png" alt="">
+                        </a>
+                        <p class="title">Скриншот игрового процесса</p>
+                    </div>
+                    <h4>Игра-головоломка</h4>
+                    <div class="projects-description">
+                        <p class="text-block project-info">
+                            В <strong>Saper Lite</strong> игрок открывает ячейки, стараясь не открыть ячейку с миной.
+                            Открыв ячейку с миной, он проигрывает. Мины расставляются после первого хода.
+                            <br><br>
+                            Правила игры сапер, можно прочитать <a class="link-open"
+                                href="https://en.wikipedia.org/wiki/Minesweeper_(video_game)">тут</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <a class="repo-link" href="https://github.com/techoji/Saper-Lite"></a>
+                </div>
+            </article>
+            <article id="ChessNeon">
+                <a href="#ChessNeon">
+                    <img class="projects-logo" src="../../../img/games/chess.png" alt="Chess neon" title="Chess neon">
+                </a>
+                <div class="projects-content">
+                    <h1>Chess neon</h1>
+                    <div class="content-block">
+                        <a data-fancybox="ChessGallery" data-caption="Chess neon - Скриншот игрового процесса"
+                            href="../../../img/games/chess_screen.png">
+                            <img class="projects-screen" src="../../../img/games/chess_screen.png" alt="">
+                        </a>
+                        <p class="title">Скриншот игрового процесса</p>
+                    </div>
+                    <h4>Шахматы в неоновом стиле</h4>
+                    <div class="projects-description">
+                        <p class="text-block project-info">
+                            Шахматная партия в <strong>Chess neon</strong> ведётся между двумя соперниками на шахматной
+                            доске путём передвижения шахматных фигур. Соперником (игроком, партнёром и т. п.) в
+                            шахматной партии может быть один человек или компьютер.
+                            <br><br>
+                            Правила, по которым ходят шахматы - можно прочитать <a class="link-open"
+                                href="https://en.wikipedia.org/wiki/Rules_of_chess">тут</a>.
+                        </p>
+                        <div class="content-block">
+                            <p class="caption">Демонстрация режима игры «<strong>Компьютер против компьютера</strong>»:
+                            </p>
+                            <a data-fancybox="ChessGallery"
+                                data-caption="Chess neon - Демонстрация режима игры «Компьютер против компьютера»"
+                                href="../../../img/games/chess_screen2.gif">
+                                <img src="../../../img/games/chess_screen2.gif" alt="">
+                            </a>
+                        </div>
+                        <dl class="text-block enum settings"> <strong>Настройки</strong>
+                            <dt>Первый ход</dt>
+                            <dd>За кем будет первый ход</dd>
+                            <dt>Поменять фигуры</dt>
+                            <dd>Меняет местами фигуры</dd>
+                            <dt>Выбор языка</dt>
+                            <dd>Выбор между русским и английским языком</dd>
+                        </dl>
+                        <dl class="text-block enum modes"> <strong>Режимы</strong>
+                            <dt>Игрок против игрока</dt>
+                            <dd>Игра против другого игрока на одном компьютере</dd>
+                            <dt>Игрок против компьютера</dt>
+                            <dd>Сможете ли одолеть искусственный интеллект?</dd>
+                            <dt>Компьютер против компьютера</dt>
+                            <dd>Ставьте ставки</dd>
+                        </dl>
+                        <dl class="text-block enum functional"> <strong>Функционал</strong>
+                            <dt>История</dt>
+                            <dd>Ведётся история ходов</dd>
+                            <dt>Отмена хода</dt>
+                            <dd>Есть возможность вернуться на шаг назад</dd>
+                            <dt>Время</dt>
+                            <dd>В игре присутствует время прохождения</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <a class="repo-link" href="https://github.com/techoji/Chess-neon"></a>
+                </div>
+            </article>
+            <article id="Puzzle15">
+                <a href="#Puzzle15">
+                    <img class="projects-logo" src="../../../img/games/puzzle.png" alt="Пятнашки" title="Пятнашки">
+                </a>
+                <div class="projects-content">
+                    <h1>Пятнашки</h1>
+                    <div class="content-block">
+                        <a data-fancybox="Puzzle15Gallery" data-caption="Пятнашки - Скриншот игрового процесса"
+                            href="../../../img/games/puzzle_screen.png">
+                            <img class="projects-screen" src="../../../img/games/puzzle_screen.png" alt="">
+                        </a>
+                        <p class="title">Скриншот игрового процесса</p>
+                    </div>
+                    <h4>Игра-головоломка</h4>
+                    <div class="projects-description">
+                        <p class="text-block project-info">
+                            Игра представляет собой набор одинаковых квадратных костяшек с нанесёнными числами,
+                            заключённых в квадратную коробку. Цель игры — перемещая костяшки по коробке, добиться
+                            упорядочивания их по номерам, желательно сделав как можно меньше перемещений.
+                        </p>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <a class="repo-link" href="https://github.com/techoji/15-puzzle"></a>
+                </div>
+            </article>
+            <article id="Snake">
+                <a href="#Snake">
+                    <img class="projects-logo" src="../../../img/games/snake.png" alt="Змейка" title="Змейка">
+                </a>
+                <div class="projects-content">
+                    <h1>Змейка</h1>
+                    <div class="content-block">
+                        <a data-fancybox="SnakeGallery" data-caption="Змейка - Скриншот игрового процесса"
+                            href="../../../img/games/snake_screen.png">
+                            <img class="projects-screen" src="../../../img/games/snake_screen.png" alt="">
+                        </a>
+                        <p class="title">Скриншот игрового процесса</p>
+                    </div>
+                    <h4>Компьютерная игра</h4>
+                    <div class="projects-description">
+                        <p class="text-block project-info">
+                            Игрок управляет длинным, тонким существом, напоминающим змею, которое ползает по плоскости
+                            ограниченной стенками, собирая еду, избегая столкновения с собственным хвостом и краями
+                            игрового поля. Каждый раз, когда змея съедает кусок пищи, она становится длиннее, что
+                            постепенно усложняет игру. Игрок управляет направлением движения головы змеи, а хвост змеи
+                            движется следом. Игрок не может остановить движение змеи.
+                        </p>
+                        <dl class="text-block enum functional"> <strong>Функционал</strong>
+                            <dt>Счёт</dt>
+                            <dd>Игра ведется на счёт, можно посмотреть данный и лучший результат</dd>
+                        </dl>
+                    </div>
+                </div>
+            </article>
+            <article id="FindAWay">
+                <a href="#FindAWay">
+                    <img class="projects-logo" src="../../../img/games/FindAWay.png" alt="Find A Way"
+                        title="Find A Way">
+                </a>
+                <div class="projects-content">
+                    <h1>Find A Way</h1>
+                    <div class="content-block">
+                        <a data-fancybox="FindAWayGallery" data-caption="Find A Way - Скриншот игрового процесса"
+                            href="../../../img/games/FindAWay_screen.png">
+                            <img class="projects-screen" src="../../../img/games/FindAWay_screen.png" alt="">
+                        </a>
+                        <p class="title">Скриншот игрового процесса</p>
+                    </div>
+                    <h4>Сможете ли Вы повторить последовательность нажимания кнопок?</h4>
+                    <div class="projects-description">
+                        <p class="text-block project-info">
+                            Вначале уровня загораются 4 кнопки, суть игры заключается в том, что нужно повторить их
+                            последовательность в том же порядке.
+                        </p>
+                        <div class="content-block">
+                            <p class="caption">Скриншот последнего четвертого уровня игры «<strong>Find A Way</strong>»:
+                            </p>
+                            <a data-fancybox="FindAWayGallery"
+                                data-caption="Find A Way - Скриншот последнего четвертого уровня"
+                                href="../../../img/games/FindAWay_screen2.png">
+                                <img src="../../../img/games/FindAWay_screen2.png" alt="">
+                            </a>
+                        </div>
+                        <dl class="text-block enum settings"> <strong>Настройки</strong>
+                            <dt>Выбор уровня</dt>
+                            <dd>Возможность выбрать уровень</dd>
+                            <dt>Цвет мигания</dt>
+                            <dd>Выбор цвета который будет мигать</dd>
+                        </dl>
+                        <dl class="text-block enum functional"> <strong>Функционал</strong>
+                            <dt>Уровень</dt>
+                            <dd>В игре 4 уровня</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <a class="repo-link" href="https://github.com/techoji/FindAWay"></a>
+                </div>
+            </article>
+            <article id="Tic-tac-toe">
+                <a href="#Tic-tac-toe">
+                    <img class="projects-logo" src="../../../img/games/Tic-tac-toe.png" alt="Tic-tac-toe"
+                        title="Tic-tac-toe">
+                </a>
+                <div class="projects-content">
+                    <h1>Tic-tac-toe</h1>
+                    <div class="content-block">
+                        <a data-fancybox="Tic-tac-toeGallery" data-caption="Tic-tac-toe - Скриншот игрового процесса"
+                            href="../../../img/games/Tic-tac-toe_screen.png">
+                            <img class="projects-screen" src="../../../img/games/Tic-tac-toe_screen.png" alt="">
+                        </a>
+                        <p class="title">Скриншот игрового процесса</p>
+                    </div>
+                    <h4>Логическая игра между двумя противниками</h4>
+                    <div class="projects-description">
+                        <p class="text-block project-info">
+                            Игроки по очереди ставят на свободные клетки поля 3х3 знаки (один всегда крестики, другой
+                            всегда нолики). Первый, выстроивший в ряд 3 своих фигуры по вертикали, горизонтали или
+                            диагонали, выигрывает. Первый ход делает игрок, ставящий крестики.
+                        </p>
+                        <dl class="text-block enum settings"> <strong>Настройки</strong>
+                            <dt>Первый ход</dt>
+                            <dd>Выбор кто ходит первый, Х или О</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <a class="repo-link" href="https://github.com/techoji/tic-tac-toe"></a>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p> Copyright © 2021 techoji. Все права защищены.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,935 @@
+.grid {
+  grid-template-columns: 1fr;
+}
+
+.info-nav {
+  position: absolute;
+  top: 220px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.information {
+  position: static;
+  top: 0;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  transition: 0.2s;
+}
+
+.info-nav > * {
+  text-align: center;
+  width: 100%;
+}
+
+.info-nav h1 {
+  padding: 0 50px 10px 50px;
+  margin: 0 3%;
+  width: auto;
+  transform: translate(0, 30px);
+  color: white;
+}
+
+.info-nav .nav-links {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.info-nav .nav-links.left {
+  justify-content: flex-end;
+}
+
+.info-nav .nav-links.right {
+  justify-content: flex-start;
+}
+
+.info-nav .nav-links > * {
+  color: white;
+  margin: 0 5%;
+  font-size: 0.8rem;
+}
+
+.link-open {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.link-open:hover {
+  text-decoration: underline;
+}
+
+.link-active {
+  font-size: 2rem;
+}
+
+.projects-container {
+  background-image: url(img/back2.png);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 120px 7%;
+  width: 100%;
+  overflow-y: auto;
+  min-height: calc(100vh - 400px);
+  padding-top: 385px;
+}
+
+.projects-container figure span {
+  display: flex;
+  justify-content: center;
+  margin: 20px 10px;
+  font-family: "Material Icons";
+  font-size: 3rem;
+}
+
+.projects-container a {
+  margin: 10px;
+}
+
+.projects-container a:hover {
+  z-index: 1;
+}
+
+figure {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  transition: 0.3s;
+  width: 260px;
+  padding: 0 20px;
+  padding-top: 16px;
+}
+
+figure p {
+  border-top: 2px dashed black;
+  padding: 20px;
+}
+
+figure img {
+  width: 100%;
+}
+
+figure:before {
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 3px;
+  background-size: 80px;
+  background-repeat: no-repeat;
+  transition: 0.2s;
+  background-image: url(img/pin.png);
+}
+
+figure:hover:before {
+  transform: scale(1.6);
+  opacity: 0;
+}
+
+figure:hover:after {
+  transform: scale(1);
+  opacity: 1;
+  filter: blur(0);
+}
+
+figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding: 5px 20px;
+  height: 60px;
+  text-align: center;
+}
+
+.music {
+  top: 0;
+  left: 30%;
+  transform: rotateZ(-6deg);
+}
+
+.music:before {
+  top: 90px;
+  left: 100px;
+}
+
+.video {
+  top: 300px;
+  left: 60%;
+  transform: rotateZ(6deg);
+}
+
+.video:before {
+  top: -20px;
+  left: 100px;
+}
+
+.photo {
+  top: -30px;
+  left: 50%;
+  transform: rotateZ(12deg);
+}
+
+.photo:before {
+  top: 40px;
+  left: 32px;
+}
+
+.photo:after {
+  top: 60px;
+  left: 110px;
+}
+
+.photo:hover:after {
+  transform: rotateZ(11deg);
+}
+
+.sites {
+  top: 20px;
+  left: 120%;
+  transform: rotateZ(-6deg);
+}
+
+.sites:before {
+  left: 172px;
+}
+
+.bots {
+  top: 440px;
+  left: -100%;
+  transform: rotateZ(-18deg);
+}
+
+.bots:before {
+  top: -10px;
+  left: 160px;
+}
+
+.programs {
+  top: 440px;
+  left: -50%;
+  transform: rotateZ(15deg);
+}
+
+.programs:before {
+  top: -20px;
+  left: 52px;
+}
+
+.games {
+  top: 440px;
+  left: -570%;
+  transform: rotateZ(-15deg);
+}
+
+.games:before {
+  top: -10px;
+  left: 170px;
+}
+
+figure:hover {
+  transition-delay: 0.1s;
+  transform: rotateZ(0deg);
+  transform: scale(1.05);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.detal-information {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(img/cardback5.jpg);
+}
+
+.detal-information article {
+  display: flex;
+  width: 100%;
+}
+
+.detal-information article > a:first-child {
+  height: 80px;
+  top: 10%;
+  position: sticky;
+  margin-top: 55px;
+  margin-bottom: 3.5%;
+  margin-left: 15%;
+}
+
+.detal-information article > a:first-child > img {
+  border-radius: 10px;
+}
+
+.detal-information article > a:not(:first-child) {
+  height: 80px;
+  top: 10%;
+  position: sticky;
+  margin-top: 55px;
+  margin-bottom: 3.5%;
+  margin-right: 15%;
+}
+
+.detal-information article > a:not(:first-child) > img {
+  border-radius: 10px;
+}
+
+.detal-information article .additional-info {
+  top: 9%;
+  position: sticky;
+  margin-top: 70px;
+  margin-bottom: 5%;
+  margin-left: 55px;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+}
+
+.detal-information article .additional-info > *:not(:first-child) {
+  margin-top: 30px;
+}
+
+.detal-information article .additional-info .repo-link {
+  position: relative;
+}
+
+/* .detal-information article .additional-info .repo-link:after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 5px;
+  left: -82px;
+  top: 17px;
+  background-color: white;
+  border-radius: 5px;
+} */
+
+.detal-information article .additional-info a.repo-link:before {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  background-image: url("img/social/git.png");
+  background-position-x: 115px;
+  background-position-y: 5px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  content: "Repository";
+  padding: 5px 15px;
+  padding-right: 5px;
+  top: 0;
+  left: -70px;
+  width: 140px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 40px;
+  max-width: 55%;
+  margin: 0 2% 30px 2%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  transition: 0.3s;
+
+  width: 100%;
+}
+
+.projects-content > h1 {
+  position: relative;
+  font-size: 2rem;
+  text-align: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px 20px 0 0;
+  border-left: 3px solid #1a1a1a;
+}
+
+.projects-name {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-left: 3px solid #1a1a1a;
+  border-radius: 20px 20px 0 0;
+  padding: 20px;
+}
+
+.projects-screen {
+  width: 100%;
+}
+
+.projects-logo {
+  width: 80px;
+  transition: 0.2s;
+}
+
+.projects-description {
+  display: flex;
+  flex-direction: column;
+  border-left: 3px solid white;
+  margin-top: 20px;
+  padding: 20px 40px;
+  border-radius: 0 0 20px 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.2s;
+}
+
+.projects-content > .projects-screen,
+.projects-description > * {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+}
+
+.projects-description > *:hover {
+  background-color: #fdfdfd;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.12);
+}
+
+.projects-content:hover > .projects-description .content-block,
+.projects-content:hover .projects-description {
+  transition-delay: 0.1s;
+  border-color: #1a1a1a;
+}
+
+.projects-content > h4 {
+  position: relative;
+  background-color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.2s;
+  border-left: 3px solid #1a1a1a;
+  padding: 40px 90px;
+}
+
+.projects-description img,
+.projects-description video,
+.projects-description .promovideo {
+  width: 100%;
+  border: none;
+}
+
+.projects-description p.nospace {
+  margin-top: 0;
+}
+
+.projects-description .btn {
+  width: 100%;
+  display: block;
+  border: none;
+  border-radius: 20px;
+  padding: 20px 0;
+  margin: 40px auto 0 auto;
+  font-weight: bold;
+  color: #4fd848;
+  background-color: white;
+  border-bottom: 3px solid #cdffd5;
+}
+
+.projects-description .btn:hover {
+  text-decoration: underline;
+  border-bottom: 3px solid white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+.projects-description p,
+dl {
+  background-color: white;
+  padding: 20px;
+}
+
+.projects-content > .projects-name:before,
+.projects-content > h1:before {
+  position: absolute;
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-size: 2.2rem;
+  border-radius: 35px;
+  color: #1a1a1a;
+  left: 30px;
+  bottom: 50%;
+  padding: 15px;
+  transform: translate(0, 50%);
+  transition: 0.5s;
+}
+
+.projects-content:hover .projects-name:before,
+.projects-content:hover h1:before {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+a[data-fancybox] {
+  display: flex;
+  position: relative;
+}
+
+a[data-fancybox]:after {
+  position: absolute;
+  content: "fullscreen";
+  font-family: "Material Icons";
+  font-size: 1.8rem;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 20px;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+a[data-fancybox]:hover:after {
+  opacity: 0.6;
+}
+
+.content-block {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 25px 15px;
+  transition: 0.2s;
+  margin-top: 20px;
+}
+
+.projects-content > .content-block {
+  border-radius: 0;
+  border: 5px solid white;
+  padding: 0px;
+  padding-bottom: 25px;
+  transition: 0.2s;
+}
+
+.content-block > * {
+  border-color: inherit;
+}
+
+dl,
+.projects-description .text-block,
+.projects-description .content-block,
+.projects-description .content-block a[data-fancybox] > *,
+.projects-description .content-block > * {
+  border-radius: 20px;
+}
+
+.text-block {
+  border: 1px solid #f5f5f5;
+}
+
+.content-block dl {
+  font-weight: 600;
+}
+
+dt {
+  margin-left: 3%;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+dd {
+  font-weight: normal;
+  margin-left: 6%;
+}
+
+.projects-description .text-block {
+  position: relative;
+  font-weight: 500;
+  padding: 30px 30px 30px 100px;
+  transition: 0.2s;
+  margin-top: 20px;
+}
+
+.projects-description .text-block.enum {
+  padding-right: 100px;
+  padding-left: 30px;
+}
+
+.projects-description .text-block:before {
+  font-family: "Material Icons";
+  font-size: 2.2rem;
+  position: absolute;
+  padding: 10px;
+  top: 50%;
+  left: 20px;
+  right: auto;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.projects-description .text-block.project-info:before {
+  content: "emoji_objects";
+  background-color: #fff0cd;
+  color: #ffb200;
+}
+
+.projects-description .text-block.info:before {
+  content: "new_releases";
+  background-color: #cdeeff;
+  color: #00a6ff;
+}
+
+.projects-description .text-block.enum:before {
+  content: "miscellaneous_services";
+  left: auto;
+  right: 20px;
+  border-radius: 10px 20px;
+}
+
+.projects-description .text-block.enum.settings:before {
+  color: #e75e5e;
+  background-color: #ffcdcd;
+}
+
+.projects-description .text-block.enum.functional:before {
+  color: #aa5fff;
+  background-color: #e4cdff;
+}
+
+.projects-description .text-block.enum.modes:before {
+  color: #5e7ee7;
+  background-color: #cdd9ff;
+}
+
+.projects-description .text-block.settings:before {
+  content: "miscellaneous_services";
+}
+
+.projects-description .text-block.modes:before {
+  content: "build";
+}
+
+.projects-description .text-block.functional:before {
+  content: "extension";
+}
+
+.projects-description .text-block.project-info:hover:before {
+  background-color: #ffb200;
+  box-shadow: -3px 5px #fff0cd;
+}
+
+.projects-description .text-block.info:hover:before {
+  background-color: #00a6ff;
+  box-shadow: -3px 5px #cdeeff;
+}
+
+.projects-description .text-block.settings:hover:before {
+  background-color: #e75e5e;
+  box-shadow: 3px 5px #ffcdcd;
+}
+
+.projects-description .text-block.functional:hover:before {
+  background-color: #aa5fff;
+  box-shadow: 3px 5px #e4cdff;
+}
+
+.projects-description .text-block.modes:hover:before {
+  background-color: #5e7ee7;
+  box-shadow: 3px 5px #cdd9ff;
+}
+
+.projects-description .text-block:hover:before {
+  color: white !important;
+}
+
+.projects-description .text-block.project-info strong {
+  color: #ffb200;
+}
+
+.projects-description .text-block.info strong {
+  color: #00a6ff;
+}
+
+.projects-description .text-block.enum.settings strong {
+  color: #e75e5e;
+}
+
+.projects-description .text-block.enum.functional strong {
+  color: #aa5fff;
+}
+
+.projects-description .text-block.enum.modes strong {
+  color: #5e7ee7;
+}
+
+.withspace,
+.addition.withspace {
+  margin-top: 10px;
+}
+
+.videotitle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+p.caption {
+  font-weight: 500;
+  padding: 20px 40px;
+  padding-top: 0;
+  background-color: inherit;
+}
+
+p.title {
+  text-align: right;
+  position: relative;
+  font-weight: 500;
+  padding: 20px 40px;
+  padding-bottom: 0;
+  background-color: inherit;
+  margin-top: 0;
+}
+
+p.title:after {
+  content: "keyboard_return";
+  font-family: "Material Icons";
+  font-weight: bold;
+  position: absolute;
+  margin-left: 5px;
+  top: 22px;
+}
+
+.topsecret p {
+  text-align: right;
+  color: #7b0305;
+}
+
+.topsecret img {
+  background-image: url(img/topsecret.jpg);
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 70%;
+  height: 1px;
+}
+
+.new {
+  position: relative;
+}
+
+.new:after {
+  position: absolute;
+  content: "";
+  width: 180px;
+  height: 180px;
+  background-size: 180px;
+  background-image: url(https://to21upqorzrjmdq7vfkimja1uyx3f2fu.cdn-freehost.com.ua/images/new2.png);
+  background-repeat: no-repeat;
+  top: 10px;
+  left: 35%;
+}
+
+/* MEDIA */
+@media (max-width: 1200px) {
+  .information {
+    position: static;
+    margin: 0;
+    width: 100%;
+    top: 0;
+    flex-direction: row;
+    background-image: none;
+    background-color: #1a1a1a;
+  }
+
+  .information .title {
+    margin-top: 0px;
+  }
+
+  .detal-information {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .projects-container {
+    padding-top: 300px;
+  }
+
+  .projects-content {
+    padding: 0 5px;
+    margin: 0;
+    transform: translate(0, 0);
+    padding-top: 150px;
+    padding-bottom: 15px !important;
+    width: 100%;
+    max-width: 98%;
+  }
+
+  .projects-content > .projects-name {
+    margin-bottom: 5px;
+  }
+
+  .projects-content > h1:before,
+  .projects-content > .projects-name:before {
+    bottom: 132%;
+    transform: translate(0);
+    left: 15px;
+    z-index: 1;
+    background-color: white;
+  }
+
+  .projects-content > .projects-name:after,
+  .projects-content > h1:after {
+    position: absolute;
+    content: "";
+    left: -10px;
+    bottom: 127%;
+    background-color: white;
+    border-radius: 0 20px 20px 0;
+    height: 80px;
+    width: 100px;
+  }
+
+  .projects-content > h1 {
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .detal-information article {
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .detal-information article > a img {
+    width: auto;
+  }
+
+  .detal-information article > a:first-child {
+    z-index: 1;
+    margin: 0;
+    position: absolute;
+    top: 25px;
+  }
+
+  .detal-information > article > a:first-child > img {
+    height: 100px;
+  }
+
+  .detal-information article > .additional-info {
+    z-index: 0;
+    margin: 0;
+    position: absolute;
+    top: 65px;
+    left: auto;
+    right: 100px;
+  }
+
+  .info-nav {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+    top: 130px;
+  }
+
+  .info-nav > .nav-links > * {
+    padding: 20px;
+  }
+
+  .info-nav .nav-links.left {
+    justify-content: flex-start;
+  }
+
+  .info-nav .nav-links.right {
+    justify-content: flex-end;
+  }
+
+  .info-nav h1 {
+    margin: 0;
+    padding: 10px;
+    border-radius: 0;
+    width: auto;
+    transform: translate(0, 0);
+    word-break: break-all;
+  }
+
+  a[data-fancybox] {
+    position: static;
+  }
+
+  .content-block {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  .projects-content > h4 {
+    margin-top: 5px;
+  }
+
+  .projects-description {
+    padding: 10px 2%;
+    padding-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .projects-description .text-block {
+    position: relative;
+    font-weight: 500;
+    padding: 60px 20px 20px 20px;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  .projects-description .text-block:before {
+    left: 50%;
+    top: -20px;
+    background-color: white;
+    border: 5px solid #f7f7f7;
+    transform: translate(-50%, 0);
+  }
+
+  .projects-description .text-block.enum {
+    padding: 60px 20px 20px 20px;
+  }
+
+  .projects-description .text-block.project-info {
+    margin-top: -5px;
+  }
+
+  .projects-description .text-block:hover:before {
+    box-shadow: none !important;
+  }
+
+  .projects-description .text-block.project-info:before {
+    background-color: white;
+  }
+
+  .projects-description .text-block.info:before {
+    background-color: white;
+  }
+
+  .projects-description .text-block.enum:before {
+    left: 50%;
+    right: auto;
+    top: -20px;
+    transform: translate(-50%, 0);
+  }
+
+  .projects-description .text-block.info:hover:before {
+    background-color: #00a6ff;
+    box-shadow: none;
+  }
+
+  .projects-description .text-block.enum:hover:before {
+    box-shadow: none;
+  }
+
+  p.caption {
+    padding: 20px;
+  }
+}

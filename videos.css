@@ -1,0 +1,148 @@
+.projects-container a p {
+    text-align: center;
+}
+
+.detal-information article>a:first-child {
+    margin-top: 55px;
+    margin-bottom: 4%;
+}
+
+.projects-content {
+    width: 100%;
+}
+
+.projects-content>.content-block:nth-child(2) {
+    width: 100%;
+    box-sizing: border-box;
+    height: 500px;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+.content-block{
+    margin-top: 10px;
+}
+
+.projects-content>.content-block {
+    width: 100%;
+    box-sizing: border-box;
+    height: 500px;
+}
+
+.projects-content iframe {
+    width: 100%;
+    border: 0;
+    height: 500px;
+    height: 100%;
+}
+
+.projects-content>h1 {
+    margin-bottom: 0;
+}
+
+.projects-content>p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.much {
+    top: 0;
+    left: 30%;
+    transform: rotateZ(-5deg);
+}
+
+.much:before {
+    top: -8px;
+    left: 140px;
+}
+
+.freestyle {
+    top: 0;
+    left: 30%;
+    transform: rotateZ(16deg);
+}
+
+.freestyle:before {
+    top: -8px;
+    left: -30px;
+}
+
+.shvmpurrv {
+    top: 0;
+    left: 30%;
+    transform: rotateZ(4deg);
+}
+
+.shvmpurrv:before {
+    top: 10px;
+    left: 60px;
+}
+
+.needless {
+    top: 0;
+    left: 30%;
+    transform: rotateZ(10deg);
+}
+
+.needless:before {
+    top: -8px;
+    left: 6px;
+}
+
+.samurai {
+    top: 0;
+    left: 30%;
+    transform: rotateZ(-15deg);
+}
+
+.samurai:before {
+    top: -8px;
+    right: 60px;
+}
+
+.sponge {
+    top: 0;
+    left: 30%;
+    transform: rotateZ(-4deg);
+}
+
+.sponge:before {
+    top: 10px;
+    left: 110px;
+}
+
+.note {
+    top: 0;
+    left: 30%;
+    transform: rotateZ(-12deg);
+}
+
+.note:before {
+    top: 120px;
+    left: 100px;
+}
+
+@media (max-width: 970px) {
+
+    .projects-content {
+        margin-top: 50px;
+        padding-bottom: 0;
+        width: 100%;
+    }
+
+    .projects-content>iframe {
+        height: 20rem;
+        margin-bottom: 0;
+        padding-bottom: 70px;
+    }
+
+    .detal-information>article>a:first-child {
+        top: -10px;
+        margin-top: 85px;
+    }
+
+     .projects-content>.content-block:nth-child(2) {
+        margin-top: 5px;
+    }
+}

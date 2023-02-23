@@ -1,0 +1,42 @@
+.projects-container {
+    height: calc(100vh - 509px);
+}
+
+.coronagram {
+    top: 0;
+    left: 30%;
+    transform: rotateZ(-6deg);
+}
+
+.coronagram:before {
+    top: -20px;
+    left: 150px;
+}
+
+.store {
+    top: 0;
+    left: 30%;
+    transform: rotateZ(7deg);
+}
+
+.store:before {
+    top: -20px;
+    left: 130px;
+}
+
+.webcanvas {
+    top: 0;
+    left: 30%;
+    transform: rotateZ(16deg);
+}
+
+.webcanvas:before {
+    top: 30px;
+    left: 50px;
+}
+
+@media (max-width: 970px) {
+    .projects-container {
+        height: auto;
+    }
+}

@@ -1,0 +1,106 @@
+.projects-container figure img {
+    border:none;
+}
+
+.detal-information article>a {
+    margin-top: 75px;
+}
+
+.topsecret {
+    transform: rotateZ(12deg);
+}
+
+.topsecret:before {
+    top: -8px;
+    left: 100px;
+}
+
+.cops {
+    transform: rotateZ(-8deg);
+}
+
+.cops:before {
+    top: 8px;
+    left: 170px;
+}
+
+.seabattle{
+    transform: rotateZ(-18deg);
+}
+
+.seabattle:before {
+    top: 8px;
+    left: 220px;
+}
+
+.sudoku {
+    transform: rotateZ(-16deg);
+}
+
+.sudoku:before {
+    top: 50px;
+    left: 170px;
+}
+
+._2048game {
+    transform: rotateZ(5deg);
+}
+
+._2048game:before {
+    top: 30px;
+    left: 50px;
+}
+
+.saper {
+    transform: rotateZ(13deg);
+}
+
+.saper:before {
+    top: 30px;
+    left: 40px;
+}
+
+.chess {
+    transform: rotateZ(-10deg);
+}
+
+.chess:before {
+    top: 120px;
+    left: 120px;
+}
+
+.puzzle {
+    transform: rotateZ(6deg);
+}
+
+.puzzle:before {
+    top: 60px;
+    left: 50px;
+}
+
+.snake {
+    transform: rotateZ(15deg);
+}
+
+.snake:before {
+    top: 20px;
+    left: 30px;
+}
+
+.findAWay {
+    transform: rotateZ(15deg);
+}
+
+.findAWay:before {
+    top: 150px;
+    left: 90px;
+}
+
+.tic-tac-toe {
+    transform: rotateZ(-14deg);
+}
+
+.tic-tac-toe:before {
+    top: 100px;
+    left: 150px;
+}
