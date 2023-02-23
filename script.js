@@ -37,6 +37,16 @@ $(document).ready(function () {
     $(".grid").css("background-position", "700px 50px");
     $(".grid").css("background-size", "1200px");
   });
+
+  // Automatic footer year set
+  const lang = $('html').attr('lang');
+  const year = new Date().getFullYear();
+  if (lang === 'ru') {
+    $('footer').html(`<p>Copyright © ${year} techoji. Все права защищены.</p>`)
+  }
+  else {
+    $('footer').html(`<p>Copyright © ${year} techoji. All rights reserved.</p>`)
+  }
 });
 
 window.addEventListener("scroll", () => {
