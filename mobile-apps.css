@@ -1,0 +1,19 @@
+.projects-container {
+    height: calc(100vh - 509px);
+}
+
+.sinoptik {
+    top: 0;
+    left: 30%;
+    transform: rotateZ(-6deg);
+}
+
+.sinoptik:before {
+    left: 150px;
+}
+
+@media (max-width: 970px) {
+    .projects-container {
+        height: auto;
+    }
+}

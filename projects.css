@@ -199,6 +199,15 @@ figcaption {
   left: 172px;
 }
 
+.mobile-apps {
+  transform: rotateZ(15deg);
+}
+
+.mobile-apps:before {
+  top: -20px;
+  left: 45px;
+}
+
 .bots {
   top: 440px;
   left: -100%;
