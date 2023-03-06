@@ -42,11 +42,11 @@
     left: 170px;
 }
 
-._2048game {
+.game2048game {
     transform: rotateZ(5deg);
 }
 
-._2048game:before {
+.game2048game:before {
     top: 30px;
     left: 50px;
 }
