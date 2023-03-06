@@ -36,7 +36,7 @@ $(document).ready(function () {
   $("#mainPage").ready(function () {
     $(".grid").css("background", "url(../img/mainback.gif)");
     $(".grid").css("background-attachment", "fixed");
-    $(".grid").css("background-position", "700px 50px");
+    $(".grid").css("background-position", "700px 0px");
     $(".grid").css("background-size", "1200px");
   });
 
