@@ -13,15 +13,6 @@
     left: 150px;
 }
 
-.sinoptik {
-    transform: rotateZ(-12deg);
-}
-
-.sinoptik:before {
-    top: 20px;
-    left: 160px;
-}
-
 .store {
     top: 0;
     left: 30%;
